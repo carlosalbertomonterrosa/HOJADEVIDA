@@ -6,8 +6,7 @@
     <title>Carlos Monterrosa - Hoja de Vida</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html3pdf@0.3.0/dist/html3pdf.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,8 +17,8 @@
                 <!-- HEADER -->
                 <div class="header-flex">
                     <div class="foto-area">
-                        <div class="foto-redonda">
-                            <img src="fotodeperfil.png" alt="Foto de perfil" onerror="this.src='https://via.placeholder.com/130x130?text=FOTO'">
+                        <div class="foto-redonda" id="fotoPerfil">
+                            <img src="fotodeperfil.png" alt="Foto de perfil" id="fotoPreview" onerror="this.src='https://via.placeholder.com/130x130?text=FOTO'">
                         </div>
                     </div>
                     <div class="info-titulo">
@@ -142,8 +141,11 @@
                     </div>
                 </div>
 
-                <!-- Botones: PDF e Imprimir -->
+                <!-- Botones: Compartir, Imprimir, PDF -->
                 <div class="pdf-btn-wrapper">
+                    <button class="btn-pdf btn-compartir" id="shareBtn">
+                        <i class="fas fa-share-alt"></i> Compartir
+                    </button>
                     <button class="btn-pdf btn-imprimir" id="printBtn">
                         <i class="fas fa-print"></i> Imprimir
                     </button>
@@ -165,6 +167,12 @@
             <i class="fas fa-envelope"></i>
             <span class="btn-text">Envíame un correo</span>
         </a>
+    </div>
+
+    <!-- MODAL PARA VER FOTO GRANDE -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
     </div>
 
     <script src="script.js"></script>
