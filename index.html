@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Carlos Monterrosa - Hoja de Vida Electrónica</title>
-    <!-- Font Awesome 6 -->
+    <title>Carlos Monterrosa - Hoja de Vida</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <!-- html2pdf -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <!-- CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,7 +19,7 @@
                 <div class="header-flex">
                     <div class="foto-area">
                         <div class="foto-redonda">
-                            <img src="fotodeperfil.png" alt="Foto de perfil" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-circle\'></i>'">
+                            <img src="fotodeperfil.png" alt="Foto de perfil" onerror="this.src='https://via.placeholder.com/130x130?text=FOTO'">
                         </div>
                     </div>
                     <div class="info-titulo">
@@ -60,7 +57,7 @@
                                     <li><i class="fas fa-plug"></i> Auditoría a proveedores eléctricos, aire acondicionado y alarmas</li>
                                     <li><i class="fas fa-chart-line"></i> Gestión de calidad en +500 equipos</li>
                                 </ul>
-                                <div class="item-sub text-rojo" style="margin-top: 8px;"><i class="fas fa-clock"></i> +15 años ejerciendo funciones clave</div>
+                                <div class="item-sub text-rojo"><i class="fas fa-clock"></i> +15 años ejerciendo funciones clave</div>
                             </div>
                         </div>
 
@@ -145,17 +142,20 @@
                     </div>
                 </div>
 
-                <!-- Botón PDF -->
+                <!-- Botones: PDF e Imprimir -->
                 <div class="pdf-btn-wrapper">
+                    <button class="btn-pdf btn-imprimir" id="printBtn">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
                     <button class="btn-pdf" id="downloadPDFBtn">
-                        <i class="fas fa-file-pdf"></i> Baja aquí la hoja de vida en formato PDF
+                        <i class="fas fa-file-pdf"></i> Descargar PDF
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Botones flotantes de WhatsApp y Correo -->
+    <!-- Botones flotantes -->
     <div class="floating-buttons">
         <a href="#" class="floating-btn whatsapp-btn" id="whatsappFloatBtn">
             <i class="fab fa-whatsapp"></i>
