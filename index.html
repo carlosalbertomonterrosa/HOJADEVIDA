@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Carlos Monterrosa - Hoja de Vida Electrónica</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="resume-wrapper" id="resume-card">
+        <div class="resume-container">
+            <div class="resume-inner">
+                <!-- HEADER -->
+                <div class="header-flex">
+                    <div class="foto-area">
+                        <div class="foto-redonda">
+                            <img src="fotodeperfil.png" alt="Foto de perfil" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-circle\'></i>'">
+                        </div>
+                    </div>
+                    <div class="info-titulo">
+                        <h1>Carlos Alberto <span>Monterrosa Berrios</span></h1>
+                        <div class="badge-rol">
+                            <i class="fas fa-microchip"></i> Especialista Electrónica & Full Stack en formación
+                        </div>
+                        <div class="datos-contacto">
+                            <p><i class="fas fa-phone-alt"></i> 3022930179</p>
+                            <p><i class="fas fa-envelope"></i> carlos.diebold@hotmail.com</p>
+                            <p><i class="fas fa-calendar-alt"></i> Nacimiento: 15 Mayo 1986 · Barranquilla</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Barranquilla, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid dos columnas -->
+                <div class="grid-dos">
+                    <!-- Columna izquierda -->
+                    <div class="col-izq">
+                        <div class="seccion">
+                            <h3><i class="fas fa-briefcase"></i> Experiencia profesional</h3>
+                            <div class="timeline-item">
+                                <div class="item-title">
+                                    <span>Técnico Senior - Mantenimiento Electrónico</span>
+                                    <span class="item-date">2010 - Actualidad</span>
+                                </div>
+                                <div class="item-sub">Diebold Nixdorf Colombia · Empresa Americana</div>
+                                <div class="item-desc">
+                                    Líder en mantenimiento preventivo y correctivo de cajeros automáticos a nivel nacional. Instalación de software embebido, sistemas operativos y auditoría técnica de proveedores.
+                                </div>
+                                <ul class="lista-funciones">
+                                    <li><i class="fas fa-cogs"></i> Mantenimiento preventivo y correctivo de ATM´s</li>
+                                    <li><i class="fas fa-code"></i> Instalación de software y sistema operativo de cajeros</li>
+                                    <li><i class="fas fa-plug"></i> Auditoría a proveedores eléctricos, aire acondicionado y alarmas</li>
+                                    <li><i class="fas fa-chart-line"></i> Gestión de calidad en +500 equipos</li>
+                                </ul>
+                                <div class="item-sub text-rojo" style="margin-top: 8px;"><i class="fas fa-clock"></i> +15 años ejerciendo funciones clave</div>
+                            </div>
+                        </div>
+
+                        <div class="seccion">
+                            <h3><i class="fas fa-microchip"></i> Proyectos personales · Robótica</h3>
+                            <div class="project-item">
+                                <div class="item-title">Robótica educativa y domótica con Arduino</div>
+                                <div class="item-desc">
+                                    Desarrollo de prototipos autónomos: brazos robóticos, sistemas de riego inteligente y automatización de sensores.
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="item-title">Sistemas embebidos para monitoreo</div>
+                                <div class="item-desc">
+                                    Creación de estaciones meteorológicas y control de acceso con RFID.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seccion">
+                            <h3><i class="fas fa-graduation-cap"></i> Formación académica</h3>
+                            <div class="education-item">
+                                <div class="item-title">Tecnólogo en Electrónica y Telecomunicaciones</div>
+                                <div class="item-sub">Politécnico de la Costa Atlántica</div>
+                            </div>
+                            <div class="education-item">
+                                <div class="item-title">Técnico en Electrónica</div>
+                                <div class="item-sub">Centro Inca</div>
+                            </div>
+                            <div class="education-item">
+                                <div class="item-title">Desarrollo Web Full Stack con React</div>
+                                <div class="item-sub">En curso · Enca24 (culmina Noviembre 2026)</div>
+                                <div class="item-desc">Enfoque en React, Node.js, bases de datos modernas.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha -->
+                    <div class="col-der">
+                        <div class="seccion">
+                            <h3><i class="fas fa-tools"></i> Competencias técnicas</h3>
+                            <div>
+                                <span class="skill-tag">Electrónica analógica/digital</span>
+                                <span class="skill-tag">Mantenimiento de ATM</span>
+                                <span class="skill-tag">Sistemas operativos</span>
+                                <span class="skill-tag">Arduino · IoT</span>
+                                <span class="skill-tag">Software embebido</span>
+                                <span class="skill-tag">Auditoría eléctrica</span>
+                                <span class="skill-tag">HTML5 · CSS3 · JavaScript</span>
+                                <span class="skill-tag">React (en formación)</span>
+                            </div>
+                        </div>
+
+                        <div class="seccion">
+                            <h3><i class="fas fa-award"></i> Logros & certificaciones</h3>
+                            <ul class="lista-funciones">
+                                <li><i class="fas fa-check-circle"></i> Certificación Diebold Nixdorf mantenimiento ATM</li>
+                                <li><i class="fas fa-check-circle"></i> Curso Seguridad Electrónica – SENA</li>
+                                <li><i class="fas fa-check-circle"></i> Reconocimiento excelencia operativa (5 años)</li>
+                            </ul>
+                        </div>
+
+                        <div class="seccion">
+                            <h3><i class="fas fa-laptop-code"></i> Transición a Desarrollo Web</h3>
+                            <div class="item-desc" style="background: #FEF2F2; padding: 1rem; border-radius: 20px; border-left: 4px solid #d32f2f;">
+                                <i class="fas fa-rocket text-rojo"></i> <strong>Actualmente:</strong> Estudio Desarrollo Web Full Stack con React en Enca24.<br>
+                                Meta: Noviembre 2026 perfilarme como desarrollador full stack.
+                                <div style="margin-top: 12px;"><i class="fas fa-calendar-week"></i> Finalización: <strong>Noviembre 2026</strong></div>
+                            </div>
+                        </div>
+
+                        <div class="seccion">
+                            <h3><i class="fas fa-globe"></i> Idiomas & habilidades</h3>
+                            <div>
+                                <span class="skill-tag">Español nativo</span>
+                                <span class="skill-tag">Inglés técnico B1+</span>
+                                <span class="skill-tag">Trabajo en equipo</span>
+                                <span class="skill-tag">Liderazgo técnico</span>
+                                <span class="skill-tag">Comunicación efectiva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón PDF -->
+                <div class="pdf-btn-wrapper">
+                    <button class="btn-pdf" id="downloadPDFBtn">
+                        <i class="fas fa-file-pdf"></i> Baja aquí la hoja de vida en formato PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones flotantes de WhatsApp y Correo -->
+    <div class="floating-buttons">
+        <a href="#" class="floating-btn whatsapp-btn" id="whatsappFloatBtn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-text">Escríbeme al WhatsApp</span>
+        </a>
+        <a href="#" class="floating-btn email-btn" id="emailFloatBtn">
+            <i class="fas fa-envelope"></i>
+            <span class="btn-text">Envíame un correo</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
