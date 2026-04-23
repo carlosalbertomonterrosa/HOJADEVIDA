@@ -13,7 +13,7 @@ function openWhatsApp() {
 
 function openEmail() {
     const asunto = encodeURIComponent("Me gustaría tener una entrevista contigo");
-    const cuerpo = encodeURIComponent("Hola Carlos,\n\nHe visto tu perfil profesional y me interesaría coordinar una entrevista contigo.\n\nSaludos cordiales.");
+    const cuerpo = encodeURIComponent("Hola Carlos,\n\nHe visto tu percfil profesional y me interesaría coordinar una entrevista contigo.\n\nSaludos cordiales.");
     window.location.href = `mailto:${email}?subject=${asunto}&body=${cuerpo}`;
 }
 
@@ -108,4 +108,4 @@ modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = "none";
     }
-}
+});
