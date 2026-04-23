@@ -6,7 +6,7 @@
     <title>Carlos Monterrosa - Hoja de Vida</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/html3pdf@0.3.0/dist/html3pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -41,6 +41,8 @@
                     <div class="col-izq">
                         <div class="seccion">
                             <h3><i class="fas fa-briefcase"></i> Experiencia profesional</h3>
+                            
+                            <!-- Experiencia Diebold -->
                             <div class="timeline-item">
                                 <div class="item-title">
                                     <span>Técnico Senior - Mantenimiento Electrónico</span>
@@ -56,12 +58,45 @@
                                     <li><i class="fas fa-plug"></i> Auditoría a proveedores eléctricos, aire acondicionado y alarmas</li>
                                     <li><i class="fas fa-chart-line"></i> Gestión de calidad en +500 equipos</li>
                                 </ul>
-                                <div class="item-sub text-rojo"><i class="fas fa-clock"></i> +15 años ejerciendo funciones clave</div>
+                            </div>
+
+                            <!-- Experiencia Barbería Comando -->
+                            <div class="timeline-item">
+                                <div class="item-title">
+                                    <span>Dueño y Administrador - Comando Barbería</span>
+                                    <span class="item-date">2014 - 2024</span>
+                                </div>
+                                <div class="item-sub">Barrio La Ceiba · Barranquilla, Colombia</div>
+                                <div class="item-desc">
+                                    Creé el negocio desde cero y logré posicionarla como la barbería #1 del barrio, superando a los principales competidores.
+                                </div>
+                                <ul class="lista-funciones">
+                                    <li><i class="fas fa-cut"></i> Dueño y fundador - creación exitosa desde cero</li>
+                                    <li><i class="fas fa-chart-line"></i> Posicionamiento como la mejor barbería del barrio La Ceiba</li>
+                                    <li><i class="fas fa-hashtag"></i> Manejo de redes sociales y marketing digital</li>
+                                    <li><i class="fas fa-users"></i> Administración general y dirección del negocio</li>
+                                </ul>
+                                <div class="item-sub text-rojo"><i class="fas fa-trophy"></i> Logro: Número 1 en el barrio, dejando atrás a la competencia</div>
                             </div>
                         </div>
 
                         <div class="seccion">
-                            <h3><i class="fas fa-microchip"></i> Proyectos personales · Robótica</h3>
+                            <h3><i class="fas fa-microchip"></i> Proyectos personales · IA y Tecnología</h3>
+                            
+                            <!-- ComandoBot -->
+                            <div class="project-item">
+                                <div class="item-title">ComandoBot - Inteligencia Artificial y Marketing Digital</div>
+                                <div class="item-desc">
+                                    Negocio actual enfocado en creación de agentes conversacionales con IA, marketing digital y desarrollo web.
+                                </div>
+                                <ul class="lista-funciones">
+                                    <li><i class="fas fa-robot"></i> Creación de agentes conversacionales con inteligencia artificial</li>
+                                    <li><i class="fas fa-chart-line"></i> Marketing digital y posicionamiento web</li>
+                                    <li><i class="fas fa-laptop-code"></i> Desarrollo de páginas web y soluciones tecnológicas</li>
+                                </ul>
+                            </div>
+
+                            <!-- Robótica -->
                             <div class="project-item">
                                 <div class="item-title">Robótica educativa y domótica con Arduino</div>
                                 <div class="item-desc">
@@ -107,6 +142,10 @@
                                 <span class="skill-tag">Auditoría eléctrica</span>
                                 <span class="skill-tag">HTML5 · CSS3 · JavaScript</span>
                                 <span class="skill-tag">React (en formación)</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Agentes IA</span>
+                                <span class="skill-tag">Marketing Digital</span>
+                                <span class="skill-tag">Redes Sociales</span>
                             </div>
                         </div>
 
@@ -116,15 +155,20 @@
                                 <li><i class="fas fa-check-circle"></i> Certificación Diebold Nixdorf mantenimiento ATM</li>
                                 <li><i class="fas fa-check-circle"></i> Curso Seguridad Electrónica – SENA</li>
                                 <li><i class="fas fa-check-circle"></i> Reconocimiento excelencia operativa (5 años)</li>
+                                <li><i class="fas fa-trophy"></i> Barbería #1 del barrio La Ceiba - Comando Barbería</li>
+                                <li><i class="fas fa-robot"></i> Fundador de ComandoBot - Agentes IA</li>
                             </ul>
                         </div>
 
                         <div class="seccion">
-                            <h3><i class="fas fa-laptop-code"></i> Transición a Desarrollo Web</h3>
-                            <div class="item-desc" style="background: #FEF2F2; padding: 1rem; border-radius: 20px; border-left: 4px solid #d32f2f;">
-                                <i class="fas fa-rocket text-rojo"></i> <strong>Actualmente:</strong> Estudio Desarrollo Web Full Stack con React en Enca24.<br>
-                                Meta: Noviembre 2026 perfilarme como desarrollador full stack.
-                                <div style="margin-top: 12px;"><i class="fas fa-calendar-week"></i> Finalización: <strong>Noviembre 2026</strong></div>
+                            <h3><i class="fas fa-laptop-code"></i> Transición a Desarrollo Web & IA</h3>
+                            <div class="item-desc" style="background: #FEF2F2; padding: 0.7rem; border-radius: 16px; border-left: 4px solid #d32f2f;">
+                                <i class="fas fa-rocket text-rojo"></i> <strong>¿Por qué el cambio?</strong><br>
+                                Me apasiona más el mundo del software que lo físico. Por eso dejé la barbería para enfocarme en <strong>ComandoBot</strong>, mi negocio de inteligencia artificial, marketing digital y creación de agentes conversacionales.
+                                <div style="margin-top: 10px;">
+                                    <i class="fas fa-calendar-week"></i> <strong>Actualmente:</strong> Estudio Desarrollo Web Full Stack con React en Enca24.<br>
+                                    Meta: Noviembre 2026 perfilarme como desarrollador full stack especializado en IA.
+                                </div>
                             </div>
                         </div>
 
@@ -136,12 +180,15 @@
                                 <span class="skill-tag">Trabajo en equipo</span>
                                 <span class="skill-tag">Liderazgo técnico</span>
                                 <span class="skill-tag">Comunicación efectiva</span>
+                                <span class="skill-tag">Gestión de negocios</span>
+                                <span class="skill-tag">Marketing Digital</span>
+                                <span class="skill-tag">Redes Sociales</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Botones: Compartir, Imprimir, PDF -->
+                <!-- Botones -->
                 <div class="pdf-btn-wrapper">
                     <button class="btn-pdf btn-compartir" id="shareBtn">
                         <i class="fas fa-share-alt"></i> Compartir
@@ -169,7 +216,7 @@
         </a>
     </div>
 
-    <!-- MODAL PARA VER FOTO GRANDE -->
+    <!-- MODAL -->
     <div id="imageModal" class="modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="modalImage">
