@@ -263,8 +263,9 @@ body {
 
 .floating-buttons {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    right: calc(50% - 10.5cm - 25px);
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 12px;
